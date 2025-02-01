@@ -1,0 +1,113 @@
+
+
+a {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Outfit", serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: "Outfit", serif;
+    font-weight: normal;
+}
+
+#name {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    letter-spacing: 15px;
+}
+
+#experiences-section-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    letter-spacing: 15px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(3, 50px);
+    font-size: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: "Outfit", serif;
+    font-weight: 250;
+    transition: color 200ms ease-out;
+    -webkit-transition: color 200ms ease-out;
+}
+
+nav a:hover {
+    color: darkgrey;
+}
+
+.grid-layout {
+    display: grid;
+    height: 680px;
+    width: 980px;
+    grid-template: 1fr / repeat(2, 1fr);
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px auto 0;
+}
+
+#profile {
+    height: 600px;
+    width: 450px;
+}
+
+#main-story p {
+    font-weight: normal;
+    line-height: 3;
+    letter-spacing: 1.7px;
+}
+
+#main-story h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+}
+
+hr {
+    width: 980px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 980px;
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2564f7;
+    transition: color 200ms ease-out;
+    -webkit-transition: color 200ms ease-out;
+}
+
+footer a:hover {
+    color: #93b2fa;
+}
+
+@media only screen and (max-width: 1230px) {
+    nav {
+        opacity: 0;
+    }
+}
