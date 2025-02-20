@@ -1,25 +1,25 @@
+/*
 
 
 
 
 
+*/
 
-//let transitionedElement = document.createElement('navOverlay:active');
 let openNav = document.getElementById('openNav')
 let navigation = document.getElementById('navOverlay');
 let closeNav = document.getElementById('closeNav');
 
-function dropDownNav() {
-    navigation.style.zIndex = '1';
+function revealNav() {
+    navigation.style.zIndex = '6';
 
 }
 
-function reverseDropDownNav() {
+function hideNav() {
     navigation.style.zIndex = '0';
-
 }
 
-openNav.addEventListener('click', dropDownNav);
-closeNav.addEventListener('click', reverseDropDownNav);
+openNav.addEventListener('click', revealNav);
+closeNav.addEventListener('click', hideNav);
 
 
