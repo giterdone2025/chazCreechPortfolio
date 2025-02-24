@@ -517,14 +517,14 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         text-align: center;
     }
     header h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
     #openNav img, #openNav, #closeNav, #closeNav img {
-        height: 18px;
-        width: 18px;
+        height: 22px;
+        width: 22px;
     }
     #otherNav a {
-        font-size: 13px;
+        font-size: 17px;
     }
     #profile, #main-story, .grid-layout, .grid-layout-2, #experience-paragraph, #experiences-section-title, hr, footer {
         width: 241px;
