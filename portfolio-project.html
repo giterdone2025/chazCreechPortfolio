@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Resume - Chaz Creech's Portfolio</title>
+  <title>Portfolio Project - Chaz Creech's Portfolio</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
@@ -19,7 +19,7 @@
   <a id="closeNav"><img height="25px" width="25px" src="./resources/close-icon.png" alt="Close Icon"/></a>
 </span>
 <header>
-  <h2>Projects</h2>
+  <h2>Portfolio Website</h2>
   <nav>
     <a href="./index.html">About</a>
     <a href="./project.html">Projects</a>
@@ -29,7 +29,74 @@
 </header>
 
 <main>
-
+  <h1 class="project-detail-title">Portfolio Website</h1>
+  <div class="space-between-titles">
+    <h2>The Objective</h2>
+    <h2>Requirements</h2>
+  </div>
+  <div id="paragraph-section-grid-layout">
+    <p>Design and develop a portfolio website which is simple
+      enough for viewers to see my whole gallery of UX and
+      front-end development work such as projects for
+      a certification program, projects for a client, and
+      projects made simply for fun. This website is a
+      way to brand myself to the whole world for the people to
+      know all my skills for any kind of software design
+      combined with development.</p>
+    <p>Design the portfolio website using Figma in a way
+      that responds to a few different screen sizes by
+      restructuring the layout of the content. This project
+      requires the utilization of HTML and CSS including a
+      little bit of JavaScript for any complex interactive
+      elements. Additionally, I need to choose a color
+      scheme for the sake of the attractiveness of the site.
+      The appearance of the website will draw inspiration
+      from the <a target="_blank" href="https://pennybanks.com/">portfolio website of Penny Banks</a>.
+      As I write the HTML/CSS/JavaScript files, I need to
+      utilize GitHub to commit changes to the files in the
+      repo.</p>
+  </div>
+  <h2 id="website-designs-title">Figma Wireframes</h2>
+  <div id="website-design-images">
+    <img class="sample-image" src="resources/macbook-wireframe.png" alt="Wireframe Macbook Pro Design" />
+    <img class="sample-image" src="resources/iphone16-wireframe.png" alt="Wireframe iPhone 16 Pro Design" />
+  </div>
+  <div class="space-between-titles">
+    <h3>Macbook Pro</h3>
+    <h3>iPhone 16 Pro</h3>
+  </div>
+  <div id="shorter-paragraph-section-grid-layout">
+    <p>For the screen size of a Macbook Pro, I used a lot of
+      grid layouts to organize the content of the pages in
+      the most attractive way for users. In this type of device,
+      including other desktops, the header consisting the nav bar
+      is placed on the left side of website.</p>
+    <p>For the other screen size, the iPhone 16 Pro or any other
+      smart phone device, all content in the grid layouts
+      are organized in a way the content is stacked vertically
+      except the grid layouts in each project page. The reason I
+      didn't restructure the content on every project page
+      because I don't want the users to keep scrolling down the
+      content on their phones until they might get bored enough to
+      exit the website. The header and nav bar is placed at the
+      very top which stretches from left to right. The header would
+      also become an interactive element revealing the nav bar when
+      the nav bar icon is clicked for the sake of simplicity.</p>
+  </div>
+  <h2 id="development-title">The Development Phase</h2>
+  <p id="development-paragraph">The following is a sample of how I developed the top part of the About page:</p>
+  <div id="development-samples">
+    <img id="code-snippet" src="resources/code-snippet.png" alt="Screenshot of the HTML Code"/>
+    <img id="website-snippet" src="resources/website-snippet.png" alt="Screenshot of the Website in Desktop Size"/>
+  </div>
+  <div id="development-samples-2">
+    <img id="code-snippet-2" src="resources/code-snippet-2.png" alt="Screenshot of the CSS Code for the Nav Bar" />
+    <img id="code-snippet-3" src="resources/code-snippet-3.png" alt="Screenshot of the CSS Code for the Grid Layout consisting profile image, header, and paragraph" />
+  </div>
+  <div id="development-samples-3">
+    <img id="website-snippet-2" src="resources/website-snippet-2.png" alt="Screenshot of the Website in Smart Phone Size"/>
+    <img id="code-snippet-4" src="resources/code-snippet-4.png" alt="Screenshot of the CSS Code for when size is 550 pixels wide" />
+  </div>
 </main>
 <hr>
 <footer>
@@ -39,4 +106,5 @@
   <p>Email: <a href="mailto: chazcreech2023@gmail.com">chazcreech2023@gmail.com</a></p>
 </footer>
 </body>
+<script src="resources/script.js"></script>
 </html>
