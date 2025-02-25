@@ -689,29 +689,31 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         width: 310px;
         font-size: 10px;
         letter-spacing: 3px;
+
     }
 
     #paragraph-section-grid-layout {
-        height: 274px;
+        height: 454px;
         gap: 0;
     }
 
     #paragraph-section-grid-layout p {
-        height: 234px;
+        height: 424px;
         width: 145px;
-        font-size: 8px;
-        line-height: 1.25;
+        font-size: 10px;
+        line-height: 1.45;
         letter-spacing: 1.1px;
     }
 
     #shorter-paragraph-section-grid-layout {
-        height: 180px;
+        height: 250px;
+        gap: 0;
     }
 
     #shorter-paragraph-section-grid-layout p {
-        height: 159px;
-        width: 125px;
-        font-size: 6px;
+        height: 229px;
+        width: 145px;
+        font-size: 8px;
         line-height: 1.25;
         letter-spacing: 1.1px;
     }
@@ -751,6 +753,7 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
 
     #development-samples-2 {
         height: 343px;
+        margin-top: 40px;
     }
 
     #code-snippet-2, #code-snippet-3 {
