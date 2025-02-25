@@ -66,7 +66,7 @@ header h2 {
     font-size: 30px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: normal;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
 }
 
 #openNav {
@@ -442,7 +442,7 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
     #openNav {
         margin-top: 0;
     }
@@ -501,27 +501,135 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         height: 710px;
         width: 446px;
     }
+    main .space-between-titles {
+        width: 550px;
+        font-size: 15px;
+        letter-spacing: 7px;
+
+    }
+
+    #paragraph-section-grid-layout, #shorter-paragraph-section-grid-layout, #website-designs-title,
+    #website-design-images, .sample-image,  #development-title, #development-paragraph, #development-samples,
+    #development-samples-2, #code-snippet, #website-snippet, #development-samples-3 {
+        width: 550px;
+    }
+
+    #paragraph-section-grid-layout {
+        height: 470px;
+    }
+
+    #paragraph-section-grid-layout p {
+        height: 450px;
+        width: 250px;
+        font-size: 13px;
+        line-height: 2;
+        letter-spacing: 1.3px;
+    }
+
+    #shorter-paragraph-section-grid-layout {
+        height: 310px;
+    }
+
+    #shorter-paragraph-section-grid-layout p {
+        height: 290px;
+        width: 250px;
+        font-size: 11px;
+        line-height: 1.5;
+        letter-spacing: 1.1px;
+    }
+
+    #website-designs-title, #development-title {
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+
+    #website-design-images {
+        height: 770px;
+    }
+
+    .sample-image {
+        height: 319px;
+        box-shadow: 15px 15px #5e4011, -1px -1px 30px #f2d9b4;
+    }
+
+    #development-paragraph {
+        font-size: 12px;
+        letter-spacing: 1.3px;
+    }
+
+    #development-samples {
+        height: 830px;
+    }
+
+    #code-snippet {
+        height: 433px;
+    }
+
+    #website-snippet {
+        height: 310px;
+    }
+
+    #development-samples-2 {
+        height: 590px;
+    }
+
+    #code-snippet-2, #code-snippet-3 {
+        width: 250px;
+    }
+
+    #code-snippet-2 {
+        height: 394px;
+    }
+
+    #code-snippet-3 {
+        height: 544px;
+    }
+
+    #development-samples-3 {
+        height: 350px;
+    }
+
+    #website-snippet-2 {
+        width: 150px;
+        height: 303px;
+    }
+
+    #code-snippet-4 {
+        width: 320px;
+        height: 203px;
+    }
+
     hr {
         margin-top: 25px;
         width: 450px;
     }
     footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 450px;
-        flex-direction: column;
-        justify-content: space-around;
+    }
+    footer p {
+        display: none;
+    }
+    #linkedin-icon, #email-icon {
+        display: block;
+    }
+    .specify-width-for-this-page {
+        width: 550px;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 590px) {
     h1 {
         text-align: center;
     }
     header h2 {
-        font-size: 22px;
+        font-size: 18px;
     }
     #openNav img, #openNav, #closeNav, #closeNav img {
-        height: 22px;
-        width: 22px;
+        height: 18px;
+        width: 18px;
     }
     #otherNav a {
         font-size: 17px;
@@ -570,15 +678,111 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         width: 241px;
         gap: 50px;
     }
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+
+    #paragraph-section-grid-layout, #shorter-paragraph-section-grid-layout, #website-designs-title,
+    #website-design-images, .sample-image,  #development-title, #development-paragraph, #development-samples,
+    #development-samples-2, #code-snippet, #website-snippet, #development-samples-3 {
+        width: 310px;
     }
-    footer p {
-        display: none;
+
+    main .space-between-titles {
+        width: 310px;
+        font-size: 10px;
+        letter-spacing: 3px;
     }
-    #linkedin-icon, #email-icon {
-        display: block;
+
+    #paragraph-section-grid-layout {
+        height: 274px;
+        gap: 0;
+    }
+
+    #paragraph-section-grid-layout p {
+        height: 234px;
+        width: 145px;
+        font-size: 8px;
+        line-height: 1.25;
+        letter-spacing: 1.1px;
+    }
+
+    #shorter-paragraph-section-grid-layout {
+        height: 180px;
+    }
+
+    #shorter-paragraph-section-grid-layout p {
+        height: 159px;
+        width: 125px;
+        font-size: 6px;
+        line-height: 1.25;
+        letter-spacing: 1.1px;
+    }
+
+    #website-designs-title, #development-title {
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    #website-design-images {
+        height: 500px;
+    }
+
+    .sample-image {
+        height: 186px;
+        box-shadow: -1px -1px 10px #f2d9b4, 1px 1px 10px #f2d9b4;
+    }
+
+    #development-paragraph {
+        font-size: 8px;
+        letter-spacing: 1.3px;
+    }
+
+    #development-samples {
+        height: 483px;
+    }
+
+    #code-snippet {
+        height: 252px;
+        box-shadow: none;
+    }
+
+    #website-snippet {
+        height: 180px;
+        box-shadow: -1px -1px 10px #f2d9b4, 1px 1px 10px #f2d9b4;
+    }
+
+    #development-samples-2 {
+        height: 343px;
+    }
+
+    #code-snippet-2, #code-snippet-3 {
+        width: 145px;
+        box-shadow: none;
+    }
+
+    #code-snippet-2 {
+        height: 236px;
+    }
+
+    #code-snippet-3 {
+        height: 326px;
+    }
+
+    #development-samples-3 {
+        height: 204px;
+    }
+
+    #website-snippet-2 {
+        width: 95px;
+        height: 202px;
+        box-shadow: -1px -1px 10px #f2d9b4, 1px 1px 10px #f2d9b4;
+    }
+
+    #code-snippet-4 {
+        width: 190px;
+        height: 127px;
+        box-shadow: none;
+    }
+
+    .specify-width-for-this-page {
+        width: 310px;
     }
 }
