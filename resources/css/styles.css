@@ -1,25 +1,22 @@
 /*
+
+I use the following selector for the purpose of styling and aligning elements.
+
 * {
     border: 1px solid black;
 }
-/*
-Background color change for header: #CC3724
-Background color for drop down menu: #e26b5d
+
 */
+
 body {
-    background-color: #faf1e3;
+    background-color: white;
 }
 
 a {
     cursor: pointer;
 }
 
-h1 {
-    font-family: "Outfit", serif;
-    font-weight: normal;
-}
-
-p {
+h1, p {
     font-family: "Outfit", serif;
     font-weight: normal;
 }
@@ -29,31 +26,6 @@ p {
     font-weight: normal;
     font-size: 70px;
     letter-spacing: 15px;
-}
-
-main .space-between-titles {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: normal;
-    font-size: 20px;
-    letter-spacing: 15px;
-    width: 980px;
-    margin: 45px auto 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-#website-designs-title, #development-title {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    letter-spacing: 15px;
-    width: 980px;
-    margin: 45px auto 0;
-}
-
-.project-detail-title {
-    width: 980px;
-    margin: 55px auto 0;
 }
 
 #projects-page-title {
@@ -69,6 +41,14 @@ header h2 {
     letter-spacing: 7px;
 }
 
+/*
+
+openNav and navOverlay is used for a little bit of interactivity of the website
+only when the site is rendered for shorter screen-sized devices. Therefore, it is displayed
+as none.
+
+ */
+
 #openNav {
     display: none;
 }
@@ -76,6 +56,13 @@ header h2 {
 #navOverlay {
     display: none;
 }
+
+/*
+
+The navigation bar below is used for the larger screen-sized devices in
+how it is formatted.
+
+ */
 
 nav {
     display: grid;
@@ -105,6 +92,16 @@ nav a:hover {
     color: darkgrey;
 }
 
+/*
+
+First grid layout is used to organize the elements for an attractive
+introduction to my website. The grid layout changes in the responsive
+design for shorter screen-sized devices. Inside this grid, #profile,
+#main-story h1 and p, has its own height and width, font style and
+formatting.
+
+ */
+
 .grid-layout {
     display: grid;
     height: 680px;
@@ -119,7 +116,7 @@ nav a:hover {
 #profile {
     height: 600px;
     width: 450px;
-    box-shadow: 15px 15px #5e4011;
+    box-shadow: 15px 15px #DFA74F;
 }
 
 #main-story {
@@ -140,6 +137,14 @@ nav a:hover {
     font-size: 70px;
 }
 
+/*
+
+The second grid layout shares a similar layout as the first one for
+both larger and shorter sized devices which involves the section's
+title, paragraph, and image.
+
+ */
+
 .grid-layout-2 {
     display: grid;
     height: 800px;
@@ -151,44 +156,12 @@ nav a:hover {
     margin: 50px auto 0;
 }
 
-.projects-grid-layout {
-    display: grid;
-    height: 311px;
-    width: 980px;
-    grid-template: 1fr / repeat(2, 1fr);
-    justify-content: center;
-    gap: 88px;
-    margin: auto;
-}
+/*
 
-#projects-page-title, .project-detail-title {
-    padding-bottom: 10px;
-}
+These are the elements formatted and sized for the second
+grid layout as mentioned before.
 
-#portfolio-image-overlay, #portfolio-project-link, #portfolio-project-link img {
-    height: 311px;
-    width: 446px;
-}
-
-#portfolio-image-overlay {
-    position: absolute;
-    background-color: black;
-    opacity: 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.25s ease-in;
-    -webkit-transition: opacity 0.25s ease-in;
-}
-
-#portfolio-image-overlay:hover {
-    opacity: 70%;
-}
-
-#portfolio-project-link img {
-    background-size: cover;
-}
+*/
 
 #experiences-section-title {
     font-family: "Bebas Neue", sans-serif;
@@ -197,124 +170,10 @@ nav a:hover {
     letter-spacing: 15px;
 }
 
-#sunsphere-image, #code-snippet, #code-snippet-2, #code-snippet-3 {
+#graduation-tassel {
     height: 533px;
     width: 400px;
-    box-shadow: 15px 15px #5e4011;
-}
-
-#paragraph-section-grid-layout {
-    height: 594px;
-    width: 980px;
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
-    gap: 40px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-#paragraph-section-grid-layout p {
-    height: 564px;
-    width: 470px;
-    font-family: "Outfit", serif;
-    font-weight: normal;
-    line-height: 3;
-    letter-spacing: 1.7px;
-    text-align: justify;
-    font-size: 16px;
-}
-
-#shorter-paragraph-section-grid-layout {
-    height: 320px;
-    width: 980px;
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
-    gap: 40px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-#shorter-paragraph-section-grid-layout p {
-    height: 300px;
-    width: 470px;
-    font-family: "Outfit", serif;
-    font-weight: normal;
-    line-height: 2;
-    letter-spacing: 1.4px;
-    text-align: justify;
-    font-size: 13px;
-}
-
-#development-paragraph {
-    font-family: "Outfit", serif;
-    font-weight: normal;
-    letter-spacing: 1.7px;
-    font-size: 16px;
-    height: 30px;
-    width: 980px;
-    margin: 20px auto 0;
-}
-
-#development-samples {
-    width: 980px;
-    height: 1500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 40px auto 0;
-}
-
-#website-snippet {
-    height: 553px;
-    width: 980px;
-}
-
-#code-snippet {
-    height: 771px;
-    width: 980px
-}
-
-#development-samples-2 {
-    height: 1100px;
-    width: 980px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 130px auto 0;
-}
-
-#code-snippet-2 {
-    height: 710px;
-    width: 450px
-}
-
-#code-snippet-3 {
-    height: 979px;
-    width: 450px;
-}
-
-#development-samples-3 {
-    height: 650px;
-    width: 980px;
-    margin: 40px auto 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-#website-snippet-2 {
-    height: 606px;
-    width: 300px;
-}
-
-#code-snippet-4 {
-    height: 406px;
-    width: 640px;
-    box-shadow: 15px 15px #5e4011;
+    box-shadow: 15px 15px #DFA74F;
 }
 
 #experience-paragraph {
@@ -328,29 +187,78 @@ nav a:hover {
     font-size: 16px;
 }
 
-#website-design-images {
-    height: 1300px;
-    width: 980px;
-    margin: 50px auto 0;
+/*
+
+A grid layout for organizing portfolio projects and styled each
+.portfolio-project-link element to make it stand out to users
+like it is clickable.
+
+*/
+
+.projects-grid-layout {
     display: grid;
-    grid-template: repeat(2, 1fr) / 1fr;
-}
-
-.sample-image, #website-snippet {
-    height: 568px;
+    height: 311px;
     width: 980px;
-    box-shadow: 15px 15px #5e4011, -1px -1px 30px #f2d9b4;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    justify-content: center;
+    gap: 88px;
+    margin: auto;
 }
 
-#website-snippet-2 {
-    box-shadow: 15px 15px #5e4011, -1px -1px 30px #f2d9b4;
+#projects-page-title, .project-detail-title {
+    padding-bottom: 10px;
 }
 
-.space-between-titles h3 {
-    font-family: "Outfit", serif;
-    letter-spacing: 1.7px;
-    font-size: 18px;
+.portfolio-image-overlay, .portfolio-project-link, .portfolio-project-link img {
+    height: 311px;
+    width: 446px;
+    box-shadow: 1px 1px 10px lightgrey, -1px 1px 10px lightgrey;
+    transition: box-shadow 0.25s ease-in;
+    -webkit-transition: box-shadow 0.25s ease-in;
 }
+
+.portfolio-image-overlay:hover, .portfolio-project-link:hover, .portfolio-project-link img:hover {
+    box-shadow: 0 0 0 lightgrey, 0 0 0 lightgrey;
+}
+
+.portfolio-image-overlay {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s ease-in;
+    -webkit-transition: opacity 0.25s ease-in;
+
+}
+
+.portfolio-image-overlay p, .portfolio-image-overlay a {
+    text-decoration: underline;
+    color: white;
+    transition: color 0.25s ease-out;
+    -webkit-transition: color 0.25s ease-out;
+}
+
+.portfolio-image-overlay a:hover, .portfolio-image-overlay p:hover {
+    color: #DFA74F;
+}
+
+.portfolio-image-overlay:hover {
+    opacity: 85%;
+}
+
+.portfolio-project-link img {
+    background-size: cover;
+}
+
+/*
+
+Styles the child elements in the root element, footer, so that it lines up
+well with the rest of the page.
+
+*/
 
 hr {
     margin-top: 100px;
@@ -380,6 +288,12 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
     display: none;
 }
 
+/*
+
+Arranges elements based on the width of the user's device.
+
+*/
+
 @media only screen and (max-width: 1230px) {
     header {
         display: flex;
@@ -391,8 +305,10 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         position: fixed;
         top: 0;
         left: 0;
-        border-color: #faf1e3;
-        background-color: #faf1e3;
+        border-color: white;
+        background-color: white;
+        //border-color: #faf1e3;
+        //background-color: #faf1e3;
         z-index: 5;
     }
     nav {
@@ -419,7 +335,8 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         margin-right: 25px;
     }
     #navOverlay {
-        background-color: #0E2851;
+        background-color: #4F607A;
+        //background-color: #0E2851;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -474,7 +391,7 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         width: 450px;
         margin-top: 100px;
     }
-    #sunsphere-image {
+    #graduation-tassel {
         display: none;
     }
     #experience-paragraph {
@@ -491,7 +408,7 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         padding: 0;
         gap: 0;
     }
-    #portfolio-image-overlay {
+    .portfolio-image-overlay {
         opacity: 70%;
     }
     .projects-grid-layout {
@@ -500,103 +417,6 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         grid-auto-flow: row;
         height: 710px;
         width: 446px;
-    }
-    main .space-between-titles {
-        width: 550px;
-        font-size: 15px;
-        letter-spacing: 7px;
-
-    }
-
-    #paragraph-section-grid-layout, #shorter-paragraph-section-grid-layout, #website-designs-title,
-    #website-design-images, .sample-image,  #development-title, #development-paragraph, #development-samples,
-    #development-samples-2, #code-snippet, #website-snippet, #development-samples-3 {
-        width: 550px;
-    }
-
-    #paragraph-section-grid-layout {
-        height: 470px;
-    }
-
-    #paragraph-section-grid-layout p {
-        height: 450px;
-        width: 250px;
-        font-size: 13px;
-        line-height: 2;
-        letter-spacing: 1.3px;
-    }
-
-    #shorter-paragraph-section-grid-layout {
-        height: 310px;
-    }
-
-    #shorter-paragraph-section-grid-layout p {
-        height: 290px;
-        width: 250px;
-        font-size: 11px;
-        line-height: 1.5;
-        letter-spacing: 1.1px;
-    }
-
-    #website-designs-title, #development-title {
-        font-size: 20px;
-        letter-spacing: 7px;
-    }
-
-    #website-design-images {
-        height: 770px;
-    }
-
-    .sample-image {
-        height: 319px;
-        box-shadow: 15px 15px #5e4011, -1px -1px 30px #f2d9b4;
-    }
-
-    #development-paragraph {
-        font-size: 12px;
-        letter-spacing: 1.3px;
-    }
-
-    #development-samples {
-        height: 830px;
-    }
-
-    #code-snippet {
-        height: 433px;
-    }
-
-    #website-snippet {
-        height: 310px;
-    }
-
-    #development-samples-2 {
-        height: 590px;
-    }
-
-    #code-snippet-2, #code-snippet-3 {
-        width: 250px;
-    }
-
-    #code-snippet-2 {
-        height: 394px;
-    }
-
-    #code-snippet-3 {
-        height: 544px;
-    }
-
-    #development-samples-3 {
-        height: 350px;
-    }
-
-    #website-snippet-2 {
-        width: 150px;
-        height: 303px;
-    }
-
-    #code-snippet-4 {
-        width: 320px;
-        height: 203px;
     }
 
     hr {
@@ -615,9 +435,7 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
     #linkedin-icon, #email-icon {
         display: block;
     }
-    .specify-width-for-this-page {
-        width: 550px;
-    }
+
 }
 
 @media only screen and (max-width: 590px) {
@@ -668,7 +486,7 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
     .grid-layout-2 div {
         height: 60px
     }
-    #portfolio-project-link, #portfolio-image-overlay, #portfolio-project-link img {
+    .portfolio-project-link, .portfolio-image-overlay, .portfolio-project-link img {
         font-size: 12px;
         width: 241px;
         height: 170px;
@@ -679,113 +497,4 @@ footer a:hover, #paragraph-section-grid-layout a:hover {
         gap: 50px;
     }
 
-    #paragraph-section-grid-layout, #shorter-paragraph-section-grid-layout, #website-designs-title,
-    #website-design-images, .sample-image,  #development-title, #development-paragraph, #development-samples,
-    #development-samples-2, #code-snippet, #website-snippet, #development-samples-3 {
-        width: 310px;
-    }
-
-    main .space-between-titles {
-        width: 310px;
-        font-size: 10px;
-        letter-spacing: 3px;
-
-    }
-
-    #paragraph-section-grid-layout {
-        height: 454px;
-        gap: 0;
-    }
-
-    #paragraph-section-grid-layout p {
-        height: 424px;
-        width: 145px;
-        font-size: 10px;
-        line-height: 1.45;
-        letter-spacing: 1.1px;
-    }
-
-    #shorter-paragraph-section-grid-layout {
-        height: 250px;
-        gap: 0;
-    }
-
-    #shorter-paragraph-section-grid-layout p {
-        height: 229px;
-        width: 145px;
-        font-size: 8px;
-        line-height: 1.25;
-        letter-spacing: 1.1px;
-    }
-
-    #website-designs-title, #development-title {
-        font-size: 15px;
-        letter-spacing: 4px;
-    }
-
-    #website-design-images {
-        height: 500px;
-    }
-
-    .sample-image {
-        height: 186px;
-        box-shadow: -1px -1px 10px #f2d9b4, 1px 1px 10px #f2d9b4;
-    }
-
-    #development-paragraph {
-        font-size: 8px;
-        letter-spacing: 1.3px;
-    }
-
-    #development-samples {
-        height: 483px;
-    }
-
-    #code-snippet {
-        height: 252px;
-        box-shadow: none;
-    }
-
-    #website-snippet {
-        height: 180px;
-        box-shadow: -1px -1px 10px #f2d9b4, 1px 1px 10px #f2d9b4;
-    }
-
-    #development-samples-2 {
-        height: 343px;
-        margin-top: 40px;
-    }
-
-    #code-snippet-2, #code-snippet-3 {
-        width: 145px;
-        box-shadow: none;
-    }
-
-    #code-snippet-2 {
-        height: 236px;
-    }
-
-    #code-snippet-3 {
-        height: 326px;
-    }
-
-    #development-samples-3 {
-        height: 204px;
-    }
-
-    #website-snippet-2 {
-        width: 95px;
-        height: 202px;
-        box-shadow: -1px -1px 10px #f2d9b4, 1px 1px 10px #f2d9b4;
-    }
-
-    #code-snippet-4 {
-        width: 190px;
-        height: 127px;
-        box-shadow: none;
-    }
-
-    .specify-width-for-this-page {
-        width: 310px;
-    }
 }
