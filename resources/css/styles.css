@@ -253,6 +253,11 @@ like it is clickable.
     background-size: cover;
 }
 
+.flex-jammming {
+    flex-direction: column;
+
+}
+
 /*
 
 Styles the child elements in the root element, footer, so that it lines up
@@ -409,7 +414,7 @@ Arranges elements based on the width of the user's device.
         gap: 0;
     }
     .portfolio-image-overlay {
-        opacity: 70%;
+        opacity: 85%;
     }
     .projects-grid-layout {
         justify-content: center;
